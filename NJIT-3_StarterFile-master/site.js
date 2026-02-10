@@ -22,8 +22,6 @@
 
 
 const vue_app = Vue.createApp({
-      // This automatically imports your movies.json file and puts it into
-      //   the variable: movies
       created () {
             fetch('movies.json').then(response => response.json()).then(json => {
                   this.movies = json
@@ -31,14 +29,21 @@ const vue_app = Vue.createApp({
       },
       data() {
         return {
-            // This holds your movies.json data.
             movies: [],
-            /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-         
-      }
-    },
+            currentPosterIndex: 0
+         }
+      },
       methods: {
-            /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            nextPoster() {
+                  const posterCount = this.movies[this.currentPosterIndex]?.posters?.length || 0
+                  this.movies[this.currentPosterIndex].posterindex = 
+                        (this.movies[this.currentPosterIndex].posterindex + 1) % posterCount
+            },
+            previousPoster() {
+                  const posterCount = this.movies[this.currentPosterIndex]?.posters?.length || 0
+                  this.movies[this.currentPosterIndex].posterindex = 
+                        (this.movies[this.currentPosterIndex].posterindex - 1 + posterCount) % posterCount
+            }
       }
 })
 
