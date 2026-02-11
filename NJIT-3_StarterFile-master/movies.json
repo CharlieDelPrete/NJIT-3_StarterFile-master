@@ -96,5 +96,33 @@
     "likes": 812,
     "dislikes": 101,
     "posterindex": 0
-  }
+  } ,
+  {
+  "title": "Interstellar",
+  "iscore": 8.7,
+  "rating": "PG-13",
+  "runtime": 169,
+  "released": [2014, 11, 7],
+  "country": "USA",
+  "posters": ["img/inter1.jpg", "img/inter2.jpg", "img/inter3.jpg"],
+  "imdb": "https://www.imdb.com/title/tt0816692/",
+  "website": "https://www.paramountmovies.com/movies/interstellar",
+  "likes": 950,
+  "dislikes": 85,
+  "posterindex": 0
+} , 
+{
+  "title": "Breaking Bad (best TV show ever created)",
+  "iscore": 9.5,
+  "rating": "TV-MA",
+  "runtime": 49,
+  "released": [2008, 1, 20],
+  "country": "USA",
+  "posters": ["img/breaking1.jpg","img/breaking2.jpg","img/breaking3.jpg" ] , 
+  "imdb": "https://www.imdb.com/title/tt0903747/",
+  "website": "https://www.amc.com/shows/breaking-bad",
+  "likes": 1200,
+  "dislikes": 60,
+  "posterindex": 0
+}
 ]
